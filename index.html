@@ -14,24 +14,26 @@
     <body>
         <script src="js.js"></script>
         <div id="pink-blur"></div>
-        <svg width="709" height="733" viewBox="0 0 709 733" fill="none" xmlns="http://www.w3.org/2000/svg" id="weird">
-            <g filter="url(#filter0_d_101_4)">
-            <path d="M27.3069 222C-13.0931 153.2 10.4736 13.3333 27.3069 -48L706.807 -149L771.307 122.5L732.807 723.5C654.14 724.5 478.707 717 406.307 679C315.807 631.5 356.807 555 281.807 515C206.807 475 249.807 369.5 223.807 329.5C197.807 289.5 77.8069 308 27.3069 222Z" fill="#FFF1DA"/>
-            <path d="M27.3069 222C-13.0931 153.2 10.4736 13.3333 27.3069 -48L706.807 -149L771.307 122.5L732.807 723.5C654.14 724.5 478.707 717 406.307 679C315.807 631.5 356.807 555 281.807 515C206.807 475 249.807 369.5 223.807 329.5C197.807 289.5 77.8069 308 27.3069 222Z" stroke="black"/>
-            </g>
-            <defs>
-            <filter id="filter0_d_101_4" x="0.5" y="-149.562" width="775.311" height="881.646" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-            <feOffset dy="4"/>
-            <feGaussianBlur stdDeviation="2"/>
-            <feComposite in2="hardAlpha" operator="out"/>
-            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_101_4"/>
-            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_101_4" result="shape"/>
-            </filter>
-            </defs>
-        </svg>
+        <div class="weird-div">
+            <svg width="709" height="733" viewBox="0 0 709 733" fill="none" xmlns="http://www.w3.org/2000/svg" id="weird">
+                <g filter="url(#filter0_d_101_4)">
+                <path d="M27.3069 222C-13.0931 153.2 10.4736 13.3333 27.3069 -48L706.807 -149L771.307 122.5L732.807 723.5C654.14 724.5 478.707 717 406.307 679C315.807 631.5 356.807 555 281.807 515C206.807 475 249.807 369.5 223.807 329.5C197.807 289.5 77.8069 308 27.3069 222Z" fill="#FFF1DA"/>
+                <path d="M27.3069 222C-13.0931 153.2 10.4736 13.3333 27.3069 -48L706.807 -149L771.307 122.5L732.807 723.5C654.14 724.5 478.707 717 406.307 679C315.807 631.5 356.807 555 281.807 515C206.807 475 249.807 369.5 223.807 329.5C197.807 289.5 77.8069 308 27.3069 222Z" stroke="black"/>
+                </g>
+                <defs>
+                <filter id="filter0_d_101_4" x="0.5" y="-149.562" width="775.311" height="881.646" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_101_4"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_101_4" result="shape"/>
+                </filter>
+                </defs>
+            </svg>
+        </div>
         <div class="header">
             <header>
                 <svg width="116" height="35" viewBox="0 0 116 35" fill="none" xmlns="http://www.w3.org/2000/svg" id="logo">
@@ -202,7 +204,7 @@
         </div>
 
         <div class="grid-container-4">
-            <div>
+            <div id="grid-text-4">
                 <h4 class="small-heading">Easy and Fast</h4>
                 <h1 class="big-heading">Book your Next Trip in 3 Easy steps</h1>
                 <div>
@@ -221,7 +223,7 @@
                     <p class="lorem-ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.</p>
                 </div>
             </div>
-            <div>
+            <div id="example-pics-div">
                 <div id="purple-blur"></div>
                 <img src="images/example-1.png" id="example-pic-1">
                 <img src="images/example-2.png" width="250px" id="example-pic-2">
