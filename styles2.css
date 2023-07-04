@@ -64,10 +64,14 @@ li:hover {
     background: radial-gradient(circle at 50% 50%,rgb(201, 85, 255), rgba(0, 0, 0, 0));
 }
 
+.weird-div {
+    position: relative;
+}
+
 #weird {
-    margin-top: -40px;
+    margin-top: -35px;
     position: absolute;
-    margin-left: 50%;
+    margin-left: 57%;
     z-index: -100;
 }
 
@@ -394,9 +398,15 @@ li:hover {
 
 .grid-container-4 {
     margin-top: 250px;
-    display: grid;
-    grid-template-columns: 550px auto;
+    display: flex;
+    flex-direction: row;
     padding: 10px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#grid-text-4 {
+    width: 550px;
 }
 
 .three-icons {
@@ -425,7 +435,7 @@ li:hover {
 }
 
 #purple-blur {
-    margin-left: 420px;
+    margin-left: 180px;
     margin-top: 60px;
     position: absolute;
     width: 200px;
@@ -434,9 +444,14 @@ li:hover {
     background: radial-gradient(circle at 50% 50%,rgb(122, 85, 255), rgba(0, 0, 0, 0));
 }
 
+#example-pics-div {
+    width: 500px;
+    height: 500px;
+}
+
 #example-pic-1 {
     border-radius: 25px;
-    margin-left: 240px;
+    margin-left: 0px;
     margin-top: 70px;
     position: absolute;
     z-index: 10;
@@ -445,7 +460,7 @@ li:hover {
 
 #example-pic-2 {
     border-radius: 25px;
-    margin-left: 465px;
+    margin-left: 225px;
     margin-top: 285px;
     position: absolute;
     z-index: 20;
@@ -857,6 +872,11 @@ footer {
 
 
 /* Responsive Section */
+
+
+@media screen and (max-width: 640px) {
+    
+}
 
 @media screen and (max-width: 1050px) {
 
