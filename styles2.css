@@ -71,6 +71,10 @@ li:hover {
     z-index: -100;
 }
 
+.navbar-btn {
+    display: none;
+}
+
 .navbar-icon {
     padding: 5px;
     display: none;
@@ -855,6 +859,30 @@ footer {
 /* Responsive Section */
 
 @media screen and (max-width: 1050px) {
+
+    .grid-container-1 {
+        text-align: center;
+        grid-template-columns: auto;
+    }
+
+    #traveller {
+        padding: 20px;
+        width: 60vw;
+    }
+
+    #heading_1 {
+        font-size: 2vw;
+    }
+    
+    #heading_2 {
+        font-size: 7vw;
+    }
+
+
+
+
+
+
     /* li {
         display: none;
         width: 100%;
@@ -866,6 +894,10 @@ footer {
         padding: 0px;
         position: absolute;
         background-color: rgba(241, 167, 5, 0.96)
+    }
+
+    .navbar-btn {
+        display: block;
     }
 
     .navbar-icon {
