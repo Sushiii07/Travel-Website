@@ -9,6 +9,7 @@ body {
     padding-left: 6vw;
     padding-right: 6vw;
     overflow-x: hidden;
+    width: 100%;
 }
 
 
@@ -26,7 +27,7 @@ body {
     cursor: pointer;
 }
 
-ul {
+.navbar {
     list-style: none;
     display: flex;
     float: right;
@@ -45,7 +46,7 @@ li:hover {
     background-color: rgb(101, 100, 100);
 }
 
-a {
+.navbar-link {
     padding: 9px;
     padding-left: 17px;
     padding-right: 17px;
@@ -68,6 +69,40 @@ a {
     position: absolute;
     margin-left: 50%;
     z-index: -100;
+}
+
+.navbar-icon {
+    padding: 5px;
+    display: none;
+    row-gap: 3px;
+    width: 35px;
+    height: 30px;
+}
+
+#line-1 {
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 4px;
+}
+
+.line-2 {
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    margin-top: 7px;
+}
+
+.line-3 {
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    margin-top: 14px
 }
 
 
@@ -121,8 +156,7 @@ a {
 }
 
 #traveller {
-    max-width: 600px;
-    padding-right: 100px;
+    width: 40vw;
     height: auto;
 }
 
@@ -815,41 +849,42 @@ footer {
 }
 
 
-/* Responsive Section 
 
-@media screen and (max-width: 1270px) {
-    #cards {
-        grid-template-columns: 27vw 27vw 27vw;
+
+
+/* Responsive Section */
+
+@media screen and (max-width: 1050px) {
+    /* li {
+        display: none;
+        width: 100%;
+    } */
+
+    .navbar {
+        display: none;
+        grid-template-columns: 100%;
+        padding: 0px;
+        position: absolute;
+        background-color: rgba(241, 167, 5, 0.96)
     }
 
-    .card {
-        margin-bottom: 2rem;
+    .navbar-icon {
+        display: grid;
     }
 
+    /* .navbar:hover {
+        width: 87%;
+    }
 
+    .navbar:hover li {
+        display: grid;
+        cursor: pointer;
+    } */
+
+    .show {
+        display: grid;
+    }
+
+    
 }
 
-@media screen and (max-width: 1040px) {
-    #cards {
-        padding-left: 4vw;
-        grid-template-columns: 37vw 37vw;
-    }
-
-    .card {
-        margin-bottom: 2rem;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    #cards {
-        /* padding-left: 7rem;
-        
-        grid-template-columns: 30vw;
-    }
-
-    .card {
-        margin-bottom: 2rem;
-    }
-}
-
-*/
