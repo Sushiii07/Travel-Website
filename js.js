@@ -7,6 +7,9 @@ const pos = ["Lahore, Pakistan", "Globetrotter", "CEO of Red Button"]
 var i=0 
 var j=1
 
+var line1 = document.getElementsById("line-1")
+var line1Y = 0
+
 function nextImage() {
     i++
     j++
@@ -29,3 +32,12 @@ function prevImage() {
     document.getElementById("position1").innerHTML = pos[(3+i%3)%3]
     document.getElementById("position2").innerHTML = pos[(3+j%3)%3]
 }
+
+function dropdown() {
+    document.getElementById("navbar-id").classList.toggle("show");
+
+    line1Y += 20;
+    line1.style.transform = "translateY(" + line1Y + "px)";
+    bird.style.left = line1Y + 'px';
+}
+
